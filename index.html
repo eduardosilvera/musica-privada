@@ -16,18 +16,15 @@
   }
   body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;}
   audio{display:none;}
-
   .topbar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;}
   .brand{display:flex;align-items:center;gap:10px;}
   .brand-icon{width:30px;height:30px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:15px;}
-  .brand-text .brand-title{font-size:13px;font-weight:700;letter-spacing:-0.2px;}
-  .brand-text .brand-sub{font-size:11px;color:var(--text2);}
+  .brand-title{font-size:13px;font-weight:700;letter-spacing:-0.2px;}
+  .brand-sub{font-size:11px;color:var(--text2);}
   .tab-bar{display:flex;gap:3px;background:var(--surface2);border-radius:10px;padding:3px;}
   .tab-btn{padding:6px 11px;border-radius:8px;border:none;font-size:12px;font-weight:500;cursor:pointer;transition:all 0.15s;background:transparent;color:var(--text2);font-family:inherit;}
   .tab-btn.active{background:var(--surface3);color:var(--text);}
-
   .main{padding:20px;max-width:700px;margin:0 auto;}
-
   .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:9px;border:none;font-size:13px;font-weight:500;cursor:pointer;transition:all 0.15s;font-family:inherit;}
   .btn-primary{background:var(--accent);color:#fff;}
   .btn-primary:hover{background:var(--accent2);}
@@ -38,16 +35,13 @@
   .btn-sm{padding:7px 13px;font-size:12px;}
   .btn-xs{padding:5px 9px;font-size:11px;border-radius:7px;}
   .btn-full{width:100%;justify-content:center;}
-
   .input{width:100%;padding:10px 13px;background:var(--surface2);border:1px solid var(--border2);border-radius:9px;color:var(--text);font-size:13px;font-family:inherit;outline:none;transition:border-color 0.15s;}
   .input:focus{border-color:var(--accent);}
   .input::placeholder{color:var(--text3);}
   label{font-size:12px;color:var(--text2);display:block;margin-bottom:5px;}
   .field{margin-bottom:13px;}
-
   .sec-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;}
   .sec-title{font-size:19px;font-weight:700;letter-spacing:-0.4px;}
-
   .song-item{display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:8px;transition:border-color 0.15s;cursor:pointer;}
   .song-item:hover{border-color:var(--border2);}
   .song-item.playing{border-color:var(--accent);background:rgba(124,58,237,0.05);}
@@ -56,33 +50,27 @@
   .song-info{flex:1;min-width:0;}
   .song-name{font-size:14px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .song-meta{font-size:11px;color:var(--text3);margin-top:2px;}
-  .song-plays{font-size:11px;color:var(--text3);white-space:nowrap;flex-shrink:0;}
-
+  .song-plays{font-size:12px;color:var(--text3);white-space:nowrap;flex-shrink:0;}
   .access-item{display:flex;align-items:center;gap:10px;padding:12px 14px;background:var(--surface);border:1px solid var(--border);border-radius:12px;margin-bottom:8px;}
   .access-avatar{width:34px;height:34px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;flex-shrink:0;}
   .access-info{flex:1;min-width:0;}
   .access-name{font-size:14px;font-weight:600;}
   .access-meta{font-size:11px;color:var(--text3);margin-top:2px;}
   .access-actions{display:flex;gap:6px;flex-shrink:0;}
-
   .badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:6px;white-space:nowrap;}
   .badge-active{background:rgba(34,197,94,0.12);color:var(--success);}
   .badge-blocked{background:rgba(239,68,68,0.1);color:var(--danger);}
-
   .stat-bar{display:flex;align-items:center;gap:10px;margin-bottom:8px;}
   .stat-bar-name{font-size:12px;color:var(--text2);width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex-shrink:0;}
   .stat-bar-track{flex:1;height:6px;background:var(--surface3);border-radius:3px;overflow:hidden;}
-  .stat-bar-fill{height:100%;background:var(--accent);border-radius:3px;transition:width 0.4s;}
+  .stat-bar-fill{height:100%;background:var(--accent);border-radius:3px;}
   .stat-bar-count{font-size:11px;color:var(--text3);width:30px;text-align:right;flex-shrink:0;}
-
-  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);display:none;align-items:flex-end;justify-content:center;z-index:200;padding:0;}
+  .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.75);display:none;align-items:flex-end;justify-content:center;z-index:200;}
   .modal-overlay.open{display:flex;}
   .modal{background:var(--surface);border:1px solid var(--border2);border-radius:20px 20px 0 0;padding:24px;width:100%;max-width:500px;max-height:90vh;overflow-y:auto;}
   .modal-handle{width:36px;height:4px;background:var(--surface3);border-radius:2px;margin:0 auto 20px;}
   .modal-title{font-size:16px;font-weight:700;margin-bottom:16px;}
   .modal-footer{display:flex;gap:8px;justify-content:flex-end;margin-top:18px;}
-
-  /* PLAYER */
   .player-bar{background:var(--surface);border-top:1px solid var(--border2);padding:12px 20px;position:fixed;bottom:0;left:0;right:0;z-index:50;}
   .player-bar-inner{max-width:700px;margin:0 auto;}
   .player-top{display:flex;align-items:center;gap:12px;margin-bottom:8px;}
@@ -92,45 +80,49 @@
   .player-controls{display:flex;align-items:center;gap:12px;}
   .ctrl-btn{border:none;background:none;cursor:pointer;color:var(--text2);display:flex;padding:6px;border-radius:8px;transition:color 0.15s;}
   .ctrl-btn:hover{color:var(--text);}
-  .play-btn{width:40px;height:40px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;border:none;cursor:pointer;transition:transform 0.1s;box-shadow:0 0 16px var(--glow);}
-  .play-btn:hover{transform:scale(1.06);}
+  .play-btn{width:40px;height:40px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;border:none;cursor:pointer;box-shadow:0 0 16px var(--glow);}
   .progress-wrap{cursor:pointer;}
   .progress-bg{background:var(--surface3);border-radius:3px;height:3px;overflow:hidden;}
   .progress-fill{height:100%;background:var(--accent);border-radius:3px;width:0%;transition:width 0.25s linear;}
   .progress-times{display:flex;justify-content:space-between;font-size:10px;color:var(--text3);margin-top:3px;}
-  .pb-spacer{height:80px;}
-
-  /* GATE / LOGIN */
+  .pb-spacer{height:90px;}
   .center-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;}
   .gate-card{background:var(--surface);border:1px solid var(--border2);border-radius:20px;padding:32px 24px;max-width:360px;width:100%;text-align:center;}
   .gate-icon{font-size:40px;margin-bottom:16px;}
   .gate-album{font-size:11px;font-weight:700;color:var(--accent2);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;}
-  .gate-title{font-size:20px;font-weight:700;letter-spacing:-0.4px;margin-bottom:6px;}
+  .gate-title{font-size:20px;font-weight:700;margin-bottom:6px;}
   .gate-sub{font-size:13px;color:var(--text2);margin-bottom:24px;line-height:1.6;}
-
-  /* STATS */
   .stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px;}
   .stat-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;}
-  .stat-num{font-size:24px;font-weight:700;letter-spacing:-0.5px;}
+  .stat-num{font-size:24px;font-weight:700;}
   .stat-label{font-size:11px;color:var(--text3);margin-top:2px;}
-
   .divider{height:1px;background:var(--border);margin:14px 0;}
   .empty{text-align:center;padding:40px 20px;color:var(--text3);font-size:13px;}
   .empty-icon{font-size:28px;margin-bottom:8px;}
-  .toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(40px);background:var(--surface3);border:1px solid var(--border2);padding:11px 18px;border-radius:11px;font-size:13px;transition:transform 0.22s;z-index:300;white-space:nowrap;opacity:0;}
+  .loading{text-align:center;padding:60px 20px;color:var(--text3);}
+  .spinner{width:32px;height:32px;border:3px solid var(--border2);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 12px;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .toast{position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(40px);background:var(--surface3);border:1px solid var(--border2);padding:11px 18px;border-radius:11px;font-size:13px;transition:transform 0.22s,opacity 0.22s;z-index:300;white-space:nowrap;opacity:0;}
   .toast.show{transform:translateX(-50%) translateY(0);opacity:1;}
   .flex{display:flex;}.items-center{align-items:center;}.justify-between{justify-content:space-between;}.gap-6{gap:6px;}.gap-8{gap:8px;}
-  .mt-8{margin-top:8px;}.mt-12{margin-top:12px;}.mt-16{margin-top:16px;}
-
   @media(max-width:400px){.main{padding:12px;}.topbar{padding:11px 14px;}.tab-btn{padding:5px 8px;font-size:11px;}.stats-grid{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
 <audio id="audio-el" preload="none"></audio>
-<div id="root"></div>
+<div id="root"><div class="loading"><div class="spinner"></div>Cargando...</div></div>
 <div class="toast" id="toast"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.23.0/firebase-app-compat.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.23.0/firebase-database-compat.min.js"></script>
 <script>
+// ══════ FIREBASE ══════
+const firebaseConfig = {
+  databaseURL: "https://free-mind-en-el-eden-default-rtdb.firebaseio.com"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
 // ══════ ÁLBUM ══════
 const ALBUM = {
   title: 'FREE MIND EN EL EDEN',
@@ -146,7 +138,7 @@ const ALBUM = {
     {id:'s8', name:'GLANGE',                 file:'08%20GLANGE.mp3'},
     {id:'s9', name:'Entonando en ti',        file:'09%20Entonando%20en%20ti.m4a'},
     {id:'s10',name:'Hoja al viento',         file:'10%20hoja%20al%20viento.m4a'},
-    {id:'s11',name:'Joven',                  file:'11%20Joven.m4a'},
+    {id:'s11',name:'Joven',                  file:'11%20%20Joven.m4a'},
     {id:'s12',name:'Esperando',              file:'12%20Esperando.mp3'},
   ]
 };
@@ -156,80 +148,62 @@ const ADMIN_PASS = 'eduf2024';
 // ══════ ESTADO ══════
 const S = {
   loggedIn: ld('loggedIn',false),
-  accesses: ld('accesses',[]),  // {id, name, status, createdAt, plays:[{songId,at}]}
+  accesses: {},
   tab: 'songs',
-  modal: null,  // 'newAccess' | 'stats:{id}'
-  // listener
+  modal: null,
   mode: 'admin',
   listenerId: null,
-  // player
+  listenerData: null,
   currentSong: null,
   playing: false,
   duration: 0,
-  currentTime: 0,
 };
 
-function sv(){ls('loggedIn',S.loggedIn);ls('accesses',S.accesses);}
-function ls(k,v){try{localStorage.setItem('fme_'+k,JSON.stringify(v));}catch(e){}}
+function sv(k,v){try{localStorage.setItem('fme_'+k,JSON.stringify(v));}catch(e){}}
 function ld(k,d){try{const v=localStorage.getItem('fme_'+k);return v?JSON.parse(v):d;}catch(e){return d;}}
-function genId(){return Date.now().toString(36)+Math.random().toString(36).slice(2,5);}
+function genId(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
 function fmtTime(s){if(!s||isNaN(s))return'0:00';return Math.floor(s/60)+':'+String(Math.floor(s%60)).padStart(2,'0');}
 function pageUrl(){return location.href.split('?')[0];}
 function initials(name){return name.split(' ').map(w=>w[0]).join('').toUpperCase().slice(0,2);}
-
-function toast(msg){
-  const t=document.getElementById('toast');
-  t.textContent=msg;t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),2400);
-}
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2400);}
 function copy(txt){navigator.clipboard.writeText(txt).then(()=>toast('Link copiado ✓'));}
 
 // ══════ AUDIO ══════
 const AUD=document.getElementById('audio-el');
 AUD.addEventListener('timeupdate',()=>{
-  S.currentTime=AUD.currentTime;S.duration=AUD.duration||0;
   const f=document.getElementById('pf'),c=document.getElementById('ct'),d=document.getElementById('dt');
-  if(f&&S.duration)f.style.width=(S.currentTime/S.duration*100)+'%';
-  if(c)c.textContent=fmtTime(S.currentTime);
-  if(d)d.textContent=fmtTime(S.duration);
+  const dur=AUD.duration||0;
+  if(f&&dur)f.style.width=(AUD.currentTime/dur*100)+'%';
+  if(c)c.textContent=fmtTime(AUD.currentTime);
+  if(d)d.textContent=fmtTime(dur);
 });
-AUD.addEventListener('loadedmetadata',()=>{S.duration=AUD.duration;const d=document.getElementById('dt');if(d)d.textContent=fmtTime(S.duration);});
+AUD.addEventListener('loadedmetadata',()=>{const d=document.getElementById('dt');if(d)d.textContent=fmtTime(AUD.duration);});
 AUD.addEventListener('ended',()=>{S.playing=false;updPlay();});
 
 function playSong(song){
   S.currentSong=song;
   AUD.src=BASE+song.file;
   AUD.load();
-  setTimeout(()=>{AUD.play().then(()=>{S.playing=true;updPlay();renderPlayerBar();updateSongList();}).catch(()=>{toast('Toca ▶ para escuchar');});},200);
-  // registrar play si es oyente
+  setTimeout(()=>{AUD.play().then(()=>{S.playing=true;updPlay();}).catch(()=>toast('Toca ▶ para escuchar'));},200);
   if(S.listenerId){
-    const acc=S.accesses.find(a=>a.id===S.listenerId);
-    if(acc){acc.plays.push({songId:song.id,at:Date.now()});sv();}
+    db.ref('accesses/'+S.listenerId+'/plays').push({songId:song.id,at:Date.now()});
   }
   renderPlayerBar();
   updateSongList();
 }
-
 function togglePlay(){
   if(!AUD.src)return;
-  if(S.playing){AUD.pause();S.playing=false;}
-  else{AUD.play();S.playing=true;}
+  if(S.playing){AUD.pause();S.playing=false;}else{AUD.play();S.playing=true;}
   updPlay();
 }
-function updPlay(){
-  const b=document.getElementById('play-icon');
-  if(b)b.innerHTML=S.playing?pauseSVG():playSVG();
-}
-function seek(e){
-  const r=e.currentTarget.getBoundingClientRect();
-  AUD.currentTime=((e.clientX-r.left)/r.width)*S.duration;
-}
+function updPlay(){const b=document.getElementById('play-icon');if(b)b.innerHTML=S.playing?pauseSVG():playSVG();}
+function seek(e){const r=e.currentTarget.getBoundingClientRect();AUD.currentTime=((e.clientX-r.left)/r.width)*(AUD.duration||0);}
 function playSVG(){return`<svg width="18" height="18" viewBox="0 0 24 24" fill="white"><polygon points="6,3 20,12 6,21"/></svg>`;}
 function pauseSVG(){return`<svg width="18" height="18" viewBox="0 0 24 24" fill="white"><rect x="5" y="3" width="5" height="18"/><rect x="14" y="3" width="5" height="18"/></svg>`;}
 
 function renderPlayerBar(){
-  let bar=document.getElementById('player-bar');
-  if(!S.currentSong){if(bar)bar.remove();return;}
+  let old=document.getElementById('player-bar');
+  if(!S.currentSong){if(old)old.remove();return;}
   const html=`<div class="player-bar" id="player-bar">
     <div class="player-bar-inner">
       <div class="player-top">
@@ -242,7 +216,7 @@ function renderPlayerBar(){
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1,4 1,10 7,10"/><path d="M3.51,15a9,9,0,1,0,.49-3"/></svg>
           </button>
           <button class="play-btn" onclick="togglePlay()"><span id="play-icon">${S.playing?pauseSVG():playSVG()}</span></button>
-          <button class="ctrl-btn" onclick="AUD.currentTime=Math.min(S.duration,AUD.currentTime+15)">
+          <button class="ctrl-btn" onclick="AUD.currentTime=Math.min(AUD.duration||0,AUD.currentTime+15)">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23,4 23,10 17,10"/><path d="M20.49,15a9,9,0,1,1-.49-3"/></svg>
           </button>
         </div>
@@ -253,19 +227,17 @@ function renderPlayerBar(){
       </div>
     </div>
   </div>`;
-  if(bar)bar.outerHTML=html;
-  else document.body.insertAdjacentHTML('beforeend',html);
-  document.getElementById('progress-bar').addEventListener('click',seek);
+  if(old)old.outerHTML=html;else document.body.insertAdjacentHTML('beforeend',html);
+  setTimeout(()=>{const b=document.getElementById('progress-bar');if(b)b.addEventListener('click',seek);},100);
 }
-
 function updateSongList(){
   ALBUM.songs.forEach(song=>{
     const el=document.getElementById('song-'+song.id);
     if(!el)return;
     const num=el.querySelector('.song-num');
-    const isPlaying=S.currentSong&&S.currentSong.id===song.id;
-    el.classList.toggle('playing',isPlaying);
-    if(num){num.classList.toggle('playing-num',isPlaying);if(isPlaying)num.textContent='♫';}
+    const isP=S.currentSong&&S.currentSong.id===song.id;
+    el.classList.toggle('playing',isP);
+    if(num){num.classList.toggle('playing-num',isP);num.textContent=isP?'♫':ALBUM.songs.indexOf(song)+1;}
   });
 }
 
@@ -276,11 +248,25 @@ function render(){
   const aid=params.get('access');
   if(aid){
     S.mode='listener';S.listenerId=aid;
-    root.innerHTML=renderListener(aid);
+    db.ref('accesses/'+aid).once('value').then(snap=>{
+      const acc=snap.val();
+      if(!acc)root.innerHTML=errGate('❌','Link inválido','Este link no existe.');
+      else if(acc.status==='blocked')root.innerHTML=errGate('🚫','Acceso bloqueado','Tu acceso fue desactivado.');
+      else{S.listenerData=acc;root.innerHTML=renderListener(acc);}
+    });
     return;
   }
   if(!S.loggedIn){root.innerHTML=renderLogin();return;}
-  root.innerHTML=renderAdmin();
+  db.ref('accesses').once('value').then(snap=>{
+    S.accesses=snap.val()||{};
+    root.innerHTML=renderAdmin();
+  });
+}
+
+function errGate(icon,title,sub){
+  return`<div class="center-wrap"><div class="gate-card">
+    <div class="gate-icon">${icon}</div><div class="gate-title">${title}</div>
+    <div class="gate-sub">${sub}</div></div></div>`;
 }
 
 // ══════ LOGIN ══════
@@ -295,8 +281,8 @@ function renderLogin(){
   </div></div>`;
 }
 function doLogin(){
-  if(document.getElementById('apass').value===ADMIN_PASS){S.loggedIn=true;sv();render();}
-  else{document.getElementById('lerr').style.display='block';}
+  if(document.getElementById('apass').value===ADMIN_PASS){S.loggedIn=true;sv('loggedIn',true);render();}
+  else document.getElementById('lerr').style.display='block';
 }
 
 // ══════ ADMIN ══════
@@ -305,10 +291,7 @@ function renderAdmin(){
     <div class="topbar">
       <div class="brand">
         <div class="brand-icon">🎵</div>
-        <div class="brand-text">
-          <div class="brand-title">${ALBUM.title}</div>
-          <div class="brand-sub">${ALBUM.artist}</div>
-        </div>
+        <div><div class="brand-title">${ALBUM.title}</div><div class="brand-sub">${ALBUM.artist}</div></div>
       </div>
       <div class="tab-bar">
         <button class="tab-btn ${S.tab==='songs'?'active':''}" onclick="setTab('songs')">Canciones</button>
@@ -319,36 +302,34 @@ function renderAdmin(){
     <div class="main">
       ${S.tab==='songs'?renderAdminSongs():S.tab==='access'?renderAdminAccess():renderAdminStats()}
     </div>
-    ${S.currentSong?'<div class="pb-spacer"></div>':''}
+    <div class="pb-spacer"></div>
   </div>
   ${S.modal==='newAccess'?renderNewAccessModal():''}`;
 }
 
 function renderAdminSongs(){
+  const accs=Object.values(S.accesses);
   return`<div class="sec-header"><div class="sec-title">Canciones (${ALBUM.songs.length})</div></div>
   ${ALBUM.songs.map((s,i)=>{
-    const plays=S.accesses.reduce((n,a)=>n+a.plays.filter(p=>p.songId===s.id).length,0);
+    const plays=accs.reduce((n,a)=>n+(a.plays?Object.values(a.plays).filter(p=>p.songId===s.id).length:0),0);
     return`<div class="song-item" id="song-${s.id}" onclick="playSong(ALBUM.songs[${i}])">
       <div class="song-num">${i+1}</div>
-      <div class="song-info">
-        <div class="song-name">${s.name}</div>
-        <div class="song-meta">${ALBUM.artist}</div>
-      </div>
+      <div class="song-info"><div class="song-name">${s.name}</div><div class="song-meta">${ALBUM.artist}</div></div>
       <div class="song-plays">${plays>0?`▶ ${plays}`:''}</div>
     </div>`;
   }).join('')}`;
 }
 
 function renderAdminAccess(){
-  const accesses=S.accesses;
+  const accs=Object.entries(S.accesses);
   return`<div class="sec-header">
-    <div class="sec-title">Accesos (${accesses.length})</div>
+    <div class="sec-title">Accesos (${accs.length})</div>
     <button class="btn btn-primary btn-sm" onclick="openNewAccess()">+ Nuevo</button>
   </div>
-  ${accesses.length===0?`<div class="empty"><div class="empty-icon">👤</div><div>Aún no creaste accesos</div><div style="margin-top:6px;font-size:12px">Crea un acceso por oyente y mándale el link</div></div>`:''}
-  ${[...accesses].reverse().map(a=>{
-    const totalPlays=a.plays.length;
-    const lastPlay=a.plays.length>0?new Date(a.plays[a.plays.length-1].at).toLocaleDateString('es-PE'):'Nunca';
+  ${accs.length===0?`<div class="empty"><div class="empty-icon">👤</div><div>Aún no creaste accesos</div><div style="margin-top:6px;font-size:12px">Crea un acceso por oyente</div></div>`:''}
+  ${[...accs].reverse().map(([id,a])=>{
+    const plays=a.plays?Object.values(a.plays).length:0;
+    const last=a.plays?new Date(Object.values(a.plays).sort((x,y)=>y.at-x.at)[0]?.at).toLocaleDateString('es-PE'):'Nunca';
     return`<div class="access-item">
       <div class="access-avatar">${initials(a.name)}</div>
       <div class="access-info">
@@ -356,49 +337,43 @@ function renderAdminAccess(){
           <span class="access-name">${a.name}</span>
           <span class="badge ${a.status==='active'?'badge-active':'badge-blocked'}">${a.status==='active'?'Activo':'Bloqueado'}</span>
         </div>
-        <div class="access-meta">▶ ${totalPlays} reproducciones · Última: ${lastPlay}</div>
+        <div class="access-meta">▶ ${plays} reproducciones · Última: ${plays>0?last:'—'}</div>
       </div>
       <div class="access-actions">
-        <button class="btn btn-secondary btn-xs" onclick="openStats('${a.id}')">📊</button>
-        <button class="btn btn-secondary btn-xs" onclick="copyAccess('${a.id}')">📋</button>
+        <button class="btn btn-secondary btn-xs" onclick="showStats('${id}')">📊</button>
+        <button class="btn btn-secondary btn-xs" onclick="copyAccess('${id}')">📋</button>
         ${a.status==='active'
-          ?`<button class="btn btn-danger btn-xs" onclick="blockAccess('${a.id}')">🚫</button>`
-          :`<button class="btn btn-success btn-xs" onclick="unblockAccess('${a.id}')">↺</button>`}
+          ?`<button class="btn btn-danger btn-xs" onclick="blockAccess('${id}')">🚫</button>`
+          :`<button class="btn btn-success btn-xs" onclick="unblockAccess('${id}')">↺</button>`}
       </div>
     </div>`;
   }).join('')}`;
 }
 
 function renderAdminStats(){
-  const totalPlays=S.accesses.reduce((n,a)=>n+a.plays.length,0);
-  const totalAccesses=S.accesses.length;
-  const activeAccesses=S.accesses.filter(a=>a.status==='active').length;
-
-  // canciones más escuchadas
-  const songPlays=ALBUM.songs.map(s=>({
-    name:s.name,
-    count:S.accesses.reduce((n,a)=>n+a.plays.filter(p=>p.songId===s.id).length,0)
-  })).sort((a,b)=>b.count-a.count);
-  const maxPlays=songPlays[0]?.count||1;
-
+  const accs=Object.values(S.accesses);
+  const allPlays=accs.flatMap(a=>a.plays?Object.values(a.plays):[]);
+  const total=allPlays.length;
+  const songPlays=ALBUM.songs.map(s=>({name:s.name,count:allPlays.filter(p=>p.songId===s.id).length})).sort((a,b)=>b.count-a.count);
+  const max=songPlays[0]?.count||1;
   return`<div class="sec-title" style="margin-bottom:16px">Estadísticas</div>
   <div class="stats-grid">
-    <div class="stat-card"><div class="stat-num">${totalPlays}</div><div class="stat-label">Reproducciones totales</div></div>
-    <div class="stat-card"><div class="stat-num">${activeAccesses}</div><div class="stat-label">Oyentes activos</div></div>
+    <div class="stat-card"><div class="stat-num">${total}</div><div class="stat-label">Reproducciones totales</div></div>
+    <div class="stat-card"><div class="stat-num">${accs.filter(a=>a.status==='active').length}</div><div class="stat-label">Oyentes activos</div></div>
   </div>
-  <div style="font-size:11px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:0.7px;margin-bottom:10px">Canciones más escuchadas</div>
+  <div style="font-size:11px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:0.7px;margin-bottom:10px">Más escuchadas</div>
   ${songPlays.map(s=>`<div class="stat-bar">
     <div class="stat-bar-name">${s.name}</div>
-    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${s.count?Math.max(4,(s.count/maxPlays)*100):0}%"></div></div>
+    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${s.count?Math.max(4,(s.count/max)*100):0}%"></div></div>
     <div class="stat-bar-count">${s.count}</div>
   </div>`).join('')}
-  ${totalAccesses>0?`<div class="divider"></div>
+  ${accs.length>0?`<div class="divider"></div>
   <div style="font-size:11px;color:var(--text3);font-weight:600;text-transform:uppercase;letter-spacing:0.7px;margin-bottom:10px">Por oyente</div>
-  ${S.accesses.map(a=>`<div class="stat-bar">
+  ${accs.map(a=>{const p=a.plays?Object.values(a.plays).length:0;return`<div class="stat-bar">
     <div class="stat-bar-name">${a.name}</div>
-    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${a.plays.length?Math.max(4,(a.plays.length/totalPlays)*100):0}%"></div></div>
-    <div class="stat-bar-count">${a.plays.length}</div>
-  </div>`).join('')}`:''}`;
+    <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${p&&total?Math.max(4,(p/total)*100):0}%"></div></div>
+    <div class="stat-bar-count">${p}</div>
+  </div>`;}).join('')}`:''}`;
 }
 
 function renderNewAccessModal(){
@@ -407,133 +382,87 @@ function renderNewAccessModal(){
       <div class="modal-handle"></div>
       <div class="modal-title">Nuevo acceso al álbum</div>
       <div style="font-size:13px;color:var(--text2);margin-bottom:16px;line-height:1.6">
-        El oyente podrá escuchar todas las canciones las veces que quiera. Puedes bloquear su acceso en cualquier momento.
+        El oyente podrá escuchar todas las canciones. Puedes bloquear su acceso en cualquier momento.
       </div>
-      <div class="field">
-        <label>Nombre del oyente</label>
-        <input class="input" id="acc-name" placeholder="ej: Juan, María, Productor..." onkeydown="if(event.key==='Enter')createAccess()">
+      <div class="field"><label>Nombre del oyente</label>
+        <input class="input" id="acc-name" placeholder="ej: Juan, María..." onkeydown="if(event.key==='Enter')createAccess()">
       </div>
-      <button class="btn btn-primary btn-full" onclick="createAccess()">✨ Crear acceso y copiar link</button>
+      <button class="btn btn-primary btn-full" onclick="createAccess()">✨ Crear y copiar link</button>
       <div class="modal-footer"><button class="btn btn-secondary" onclick="closeModal()">Cancelar</button></div>
     </div>
   </div>`;
 }
 
-function renderStatsModal(id){
-  const acc=S.accesses.find(a=>a.id===id);
-  if(!acc)return'';
-  const songStats=ALBUM.songs.map(s=>({
-    name:s.name,
-    count:acc.plays.filter(p=>p.songId===s.id).length
-  })).sort((a,b)=>b.count-a.count);
-  const max=songStats[0]?.count||1;
-  return`<div class="modal-overlay open" onclick="if(event.target===this)closeModal()">
-    <div class="modal">
-      <div class="modal-handle"></div>
-      <div class="modal-title">📊 ${acc.name}</div>
-      <div style="font-size:13px;color:var(--text2);margin-bottom:16px">${acc.plays.length} reproducciones totales</div>
-      ${songStats.map(s=>`<div class="stat-bar">
-        <div class="stat-bar-name">${s.name}</div>
-        <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${s.count?Math.max(4,(s.count/max)*100):0}%"></div></div>
-        <div class="stat-bar-count">${s.count}</div>
-      </div>`).join('')}
-      <div class="modal-footer">
-        <button class="btn btn-secondary" onclick="copyAccess('${id}');closeModal()">📋 Copiar link</button>
-        <button class="btn btn-secondary" onclick="closeModal()">Cerrar</button>
-      </div>
+function showStats(id){
+  const a=S.accesses[id];
+  if(!a)return;
+  const plays=a.plays?Object.values(a.plays):[];
+  const songPlays=ALBUM.songs.map(s=>({name:s.name,count:plays.filter(p=>p.songId===s.id).length})).sort((x,y)=>y.count-x.count);
+  const max=songPlays[0]?.count||1;
+  const modal=document.createElement('div');
+  modal.className='modal-overlay open';
+  modal.innerHTML=`<div class="modal">
+    <div class="modal-handle"></div>
+    <div class="modal-title">📊 ${a.name}</div>
+    <div style="font-size:13px;color:var(--text2);margin-bottom:16px">${plays.length} reproducciones totales</div>
+    ${songPlays.map(s=>`<div class="stat-bar">
+      <div class="stat-bar-name">${s.name}</div>
+      <div class="stat-bar-track"><div class="stat-bar-fill" style="width:${s.count?Math.max(4,(s.count/max)*100):0}%"></div></div>
+      <div class="stat-bar-count">${s.count}</div>
+    </div>`).join('')}
+    <div class="modal-footer">
+      <button class="btn btn-secondary" onclick="copyAccess('${id}');this.closest('.modal-overlay').remove()">📋 Copiar link</button>
+      <button class="btn btn-secondary" onclick="this.closest('.modal-overlay').remove()">Cerrar</button>
     </div>
   </div>`;
+  document.body.appendChild(modal);
 }
 
 // ══════ LISTENER ══════
-function renderListener(id){
-  const acc=S.accesses.find(a=>a.id===id);
-  if(!acc)return`<div class="center-wrap"><div class="gate-card">
-    <div class="gate-icon">❌</div><div class="gate-title">Link inválido</div>
-    <div class="gate-sub">Este link no existe.</div></div></div>`;
-  if(acc.status==='blocked')return`<div class="center-wrap"><div class="gate-card">
-    <div class="gate-icon">🚫</div><div class="gate-title">Acceso bloqueado</div>
-    <div class="gate-sub">Tu acceso fue desactivado.</div></div></div>`;
-
+function renderListener(acc){
   return`<div>
     <div class="topbar">
       <div class="brand">
         <div class="brand-icon">🎵</div>
-        <div class="brand-text">
-          <div class="brand-title">${ALBUM.title}</div>
-          <div class="brand-sub">${ALBUM.artist}</div>
-        </div>
+        <div><div class="brand-title">${ALBUM.title}</div><div class="brand-sub">${ALBUM.artist}</div></div>
       </div>
-      <span class="badge badge-active" style="font-size:10px">Hola, ${acc.name}</span>
+      <span class="badge badge-active">Hola, ${acc.name}</span>
     </div>
-    <div class="main" style="padding-bottom:100px">
-      <div style="margin-bottom:16px;font-size:13px;color:var(--text2)">Elige una canción para escuchar</div>
-      ${ALBUM.songs.map((s,i)=>`<div class="song-item" id="song-${s.id}" onclick="playSong(ALBUM.songs[${i}]);recordPlay('${acc.id}','${s.id}')">
+    <div class="main" style="padding-bottom:140px">
+      <div style="margin-bottom:16px;font-size:13px;color:var(--text2)">Elige una canción</div>
+      ${ALBUM.songs.map((s,i)=>`<div class="song-item" id="song-${s.id}" onclick="playSong(ALBUM.songs[${i}])">
         <div class="song-num">${i+1}</div>
-        <div class="song-info">
-          <div class="song-name">${s.name}</div>
-          <div class="song-meta">${ALBUM.artist}</div>
-        </div>
-        <span style="font-size:16px;color:var(--text3)">▶</span>
+        <div class="song-info"><div class="song-name">${s.name}</div><div class="song-meta">${ALBUM.artist}</div></div>
+        <span style="color:var(--text3)">▶</span>
       </div>`).join('')}
-      <div style="text-align:center;margin-top:20px;font-size:11px;color:var(--text3)">Sin opción de descarga · Acceso privado</div>
+      <div style="text-align:center;margin-top:20px;font-size:11px;color:var(--text3)">Acceso privado · Sin descarga</div>
     </div>
   </div>`;
-}
-
-function recordPlay(accessId, songId){
-  const acc=S.accesses.find(a=>a.id===accessId);
-  if(acc){acc.plays.push({songId,at:Date.now()});sv();}
 }
 
 // ══════ ACCIONES ══════
 function setTab(t){S.tab=t;render();}
 function openNewAccess(){S.modal='newAccess';render();}
-function openStats(id){S.modal='stats:'+id;render();}
 function closeModal(){S.modal=null;render();}
 
 function createAccess(){
   const name=document.getElementById('acc-name').value.trim();
   if(!name){toast('Escribe el nombre del oyente');return;}
   const id=genId();
-  S.accesses.push({id,name,status:'active',createdAt:Date.now(),plays:[]});
-  sv();
-  copy(pageUrl()+'?access='+id);
-  S.modal=null;
-  render();
+  db.ref('accesses/'+id).set({name,status:'active',createdAt:Date.now()}).then(()=>{
+    copy(pageUrl()+'?access='+id);
+    S.modal=null;render();
+  });
 }
-
-function copyAccess(id){
-  copy(pageUrl()+'?access='+id);
-}
-
-function blockAccess(id){
-  const a=S.accesses.find(x=>x.id===id);
-  if(a){a.status='blocked';sv();}
-  render();toast('Acceso bloqueado');
-}
-
-function unblockAccess(id){
-  const a=S.accesses.find(x=>x.id===id);
-  if(a){a.status='active';sv();}
-  render();toast('Acceso reactivado');
-}
+function copyAccess(id){copy(pageUrl()+'?access='+id);}
+function blockAccess(id){db.ref('accesses/'+id+'/status').set('blocked').then(()=>{toast('Acceso bloqueado');render();});}
+function unblockAccess(id){db.ref('accesses/'+id+'/status').set('active').then(()=>{toast('Acceso reactivado');render();});}
 
 document.addEventListener('contextmenu',e=>{if(e.target===AUD)e.preventDefault();});
 document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key==='s')e.preventDefault();});
 
 // ══════ INIT ══════
-(function(){
-  const params=new URLSearchParams(location.search);
-  if(params.get('access'))S.mode='listener';
-  render();
-
-  // Si hay modal de stats
-  if(S.modal&&S.modal.startsWith('stats:')){
-    const id=S.modal.split(':')[1];
-    document.body.insertAdjacentHTML('beforeend',renderStatsModal(id));
-  }
-})();
+render();
 </script>
 </body>
 </html>
