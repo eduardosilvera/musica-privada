@@ -510,8 +510,9 @@ function startListen(code){
   AUD.src=songUrl(song);
   AUD.load();
   render();
-  document.getElementById('progress-bar').addEventListener('click',seek);
   setTimeout(()=>{
+    const bar=document.getElementById('progress-bar');
+    if(bar) bar.addEventListener('click',seek);
     AUD.play().then(()=>{S.playing=true;updPlay();}).catch(()=>{toast('Toca ▶ para escuchar');});
   },300);
 }
